@@ -70,7 +70,7 @@ function addToChosenRepos(repo) {
 	const ownerElement = document.createElement('p');
 	ownerElement.textContent = `Owner: ${repo.owner.login}`
 	const starsElement = document.createElement('p');
-	const stars = repo.stargazers_count < 1000 ? repo.stargazers_count : (repo.stargazers_count / 1000).toFixed(1)+'K'
+	const stars = repo.stargazers_count < 1000 ? repo.stargazers_count : (repo.stargazers_count / 1000).toFixed(1) + 'K'
 
 	const removeButton = document.createElement('button');
 	removeButton.textContent = 'DELETE'
@@ -86,7 +86,7 @@ function addToChosenRepos(repo) {
 	repoList.prepend(liItemElement);
 }
 
-function autocompleteClickHandler(event){
+function autocompleteClickHandler(event) {
 	const repo = JSON.parse(event.target.dataset.repo);
 	input.value = '';
 
