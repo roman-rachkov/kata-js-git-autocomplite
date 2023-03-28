@@ -14,7 +14,9 @@ function inputHandler(event) {
 }
 
 function clearAutocomplete() {
-  // autocomplete.children('li').removeEventListener('click', )
+  autocomplete
+    .querySelector('li')
+    ?.removeEventListener('click', autocompleteClickHandler)
   autocomplete.innerHTML = ''
   document.querySelector('.error')?.remove()
 }
