@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .querySelector('form')
     .addEventListener('submit', (e) => e.preventDefault())
 
-  input.addEventListener('keyup', inputHandler)
+  input.addEventListener('input', inputHandler)
 })
 
 function inputHandler(event) {
